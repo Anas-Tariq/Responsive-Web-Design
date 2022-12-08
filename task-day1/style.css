@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --sky-color: #7fccc2;
+    --gray-color: #a0a0a0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 5vh auto;
+    gap: 2rem;
+}
+
+/****************************** navbar *******************************/
+.page-navbar {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    gap: 1rem;
+}
+.page-navbar .logo-section__img-logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.page-navbar__link-section ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+.page-navbar__link-section ul ion-icon {
+    margin-right: 0.25rem;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+.page-navbar__link-section ul span {
+    color: var(--sky-color);
+}
+
+.twitter-section,
+.facebook-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.twitter-section h3,
+.facebook-section h3 {
+    text-transform: uppercase;
+    color: var(--gray-color);
+    font-size: 0.75rem;
+    border-bottom: 1px dashed var(--gray-color);
+}
+.twitter-section p span {
+    color: var(--sky-color);
+}
+.twitter-section button,
+.facebook-section button {
+    border: 1px solid var(--gray-color);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: var(--sky-color);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.twitter-section button:hover,
+.facebook-section button:hover {
+    border: 1px solid var(--sky-color);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    font-size: 1rem;
+    background-color: var(--sky-color);
+    color: #fff;
+}
+.twitter-section button ion-icon,
+.facebook-section button ion-icon {
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+/****************************** navbar *******************************/
+
+/****************************** main *******************************/
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 74%;
+}
+.hero-section {
+    width: 100%;
+}
+.hero-section__info {
+    background-image: url("img/gallery/gallery-1.jpg");
+    background-repeat: no-repeat;
+    height: 20rem;
+}
+.hero-section__info .info__details {
+    position: relative;
+    display: inline-block;
+    top: 64%;
+}
+
+.hero-section__info h2 {
+    padding: 0.2rem 1rem;
+    display: inline-block;
+    background-color: #fff;
+}
+.hero-section__info p {
+    padding: 0.2rem 1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-section__tabs ul {
+    list-style: none;
+    display: flex;
+    margin-top: 0.125rem;
+    overflow: hidden;
+    border-radius: 0.2rem;
+}
+
+.hero-section__tabs ul li {
+    background-color: var(--sky-color);
+    padding: 0.4rem;
+    border: 0.125rem #8abeb7 solid;
+}
+/****************************** main *******************************/
+
+/****************************** Contact *******************************/
+.contact-us-section {
+    align-items: inherit;
+    display: flex;
+    gap: 1.125rem;
+    justify-content: space-around;
+    height: 5rem;
+}
+
+.contact-us-section ion-icon {
+    vertical-align: middle;
+    font-size: 4rem;
+}
+/****************************** Contact *******************************/
+
+/****************************** Articles *******************************/
+.more-articles-section {
+    display: flex;
+    justify-content: space-between;
+}
+.more-articles-section article {
+    width: 20%;
+}
+
+.more-articles-section .more-articles-section__article-img img {
+    width: 100%;
+}
+
+.more-articles-section .more-articles-section__article-content h4 {
+    font-size: 0.7rem;
+    color: var(--sky-color);
+}
+.more-articles-section .more-articles-section__article-content .article-details {
+    font-size: 0.5rem;
+}
+.more-articles-section .more-articles-section__article-content .article-date {
+    font-size: 0.7rem;
+}
+.more-articles-section .more-articles-section__article-content .article-date {
+    color: var(--sky-color);
+}
+.more-articles-section .more-articles-section__article-content .article-date ion-icon {
+    vertical-align: middle;
+}
+/****************************** Articles *******************************/
+
+/****************************** Footer *******************************/
+.footer .container {
+    color: var(--gray-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-top: 1px solid var(--gray-color);
+}
+.privacy-section h5:nth-child(1) {
+    color: var(--sky-color);
+}
+.footer .container .social-section ion-icon {
+    font-size: 2rem;
+}
+/****************************** Footer *******************************/
+
+/****************************** Media Query *******************************/
+@media (max-width: 1202px) {
+    .hero-section__tabs p {
+        display: none;
+    }
+
+    .hero-section__tabs li {
+        width: 25%;
+        text-align: center;
+    }
+}
+@media (max-width: 1064px) {
+    .container {
+        flex-direction: column;
+    }
+    .twitter-section,
+    .facebook-section {
+        display: none;
+    }
+    .page-navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .page-navbar__link-section ul {
+        display: flex;
+        justify-content: space-around;
+        width: 30rem;
+    }
+    .page-content {
+        width: 100%;
+    }
+    .page-navbar__link-section ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-navbar__link-section ul ion-icon {
+        font-size: 1.5rem;
+    }
+    .page-navbar__link-section ul span {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 754px) {
+    .container {
+        width: 100%;
+    }
+    .page-navbar {
+        flex-direction: column-reverse;
+    }
+    .page-navbar__link-section ul ion-icon {
+        display: none;
+    }
+    .more-articles-section {
+        flex-direction: column;
+    }
+    .more-articles-section article {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .contact-us-section ion-icon {
+        font-size: 2rem;
+    }
+    .contact-us-section h5 {
+        font-size: 0.5rem;
+    }
+    .page-navbar__link-section {
+        width: 100%;
+        border-bottom: 1px solid var(--gray-color);
+    }
+    .page-navbar__link-section ul {
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        width: 100%;
+    }
+}
+/****************************** Media Query *******************************/
