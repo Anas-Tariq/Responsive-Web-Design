@@ -209,7 +209,7 @@
         text-align: center;
     }
 }
-@media (max-width: 1064px) {
+@media (max-width: 1000px) {
     .container {
         flex-direction: column;
     }
@@ -228,9 +228,6 @@
         justify-content: space-around;
         width: 30rem;
     }
-    .page-content {
-        width: 100%;
-    }
     .page-navbar__link-section ul li {
         display: flex;
         flex-direction: column;
@@ -242,7 +239,14 @@
     .page-navbar__link-section ul span {
         font-size: 1rem;
     }
+    .page-content {
+        width: 100%;
+    }
+    .hero-section__info {
+        background-image: url("img/gallery/gallery-11.jpg");
+    }
 }
+
 @media (max-width: 754px) {
     .container {
         width: 100%;
