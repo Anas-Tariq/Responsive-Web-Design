@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Tajawal:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.glozzom-nav {
+  background-color: #363d41;
+  color: #fff;
+  height: 4rem;
+}
+.glozzom-nav .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.glozzom-nav .glozzom-nav__link-section {
+  width: 40%;
+}
+.glozzom-nav .glozzom-nav__link-section ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.glozzom-nav .glozzom-nav__link-section ul li {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.hero {
+  height: 25rem;
+  width: 100%;
+  background-image: url("../../img/image1.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.hero .hero__heading {
+  font-size: 5rem;
+}
+.hero .hero__btn {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #e03947;
+  color: #fff;
+}
+
+.servics-section {
+  padding: 4rem 1rem;
+  width: 100%;
+}
+.servics-section .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.servics-section .container .service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.servics-section .container .service-card ion-icon {
+  font-size: 5rem;
+}
+.servics-section .container .service-card h3 {
+  font-size: 2rem;
+}
+.servics-section .container .service-card p {
+  text-align: center;
+}
+
+.get-ready {
+  height: 15rem;
+  width: 100%;
+  background-image: url("../../img/lights.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+.get-ready h3 {
+  font-size: 3rem;
+}
+
+.laptop-section {
+  width: 100%;
+}
+.laptop-section .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.laptop-section .container .laptop-section__content {
+  width: 50%;
+}
+.laptop-section .container .laptop-section__content h3 {
+  font-size: 2.4rem;
+}
+.laptop-section .container .laptop-section__content button {
+  border: 1px #e03947 solid;
+  margin-top: 0.4rem;
+  border-radius: 5px;
+  padding: 0.7rem;
+  background-color: transparent;
+  color: #e03947;
+  font-size: 1.2rem;
+}
+.laptop-section .container .laptop-section__img img {
+  width: 28rem;
+}
+
+.boxes {
+  width: 100%;
+}
+.boxes .container {
+  width: 80%;
+  height: 20rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+.boxes .container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1.3rem;
+  background-color: #363d41;
+}
+.boxes .container .box:nth-child(even) {
+  background-color: #e03947;
+}
+.boxes .container .box ion-icon {
+  font-size: 4rem;
+}
+.boxes .container .box h3 {
+  font-size: 1.7rem;
+}
+.boxes .container .box p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */
